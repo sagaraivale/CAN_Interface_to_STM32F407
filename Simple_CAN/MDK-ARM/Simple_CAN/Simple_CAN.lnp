@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+"simple_can\startup_stm32f407xx.o"
+"simple_can\system_stm32f4xx.o"
+"simple_can\stm32f4xx_it.o"
+"simple_can\main.o"
+"simple_can\stm32f4xx_hal_msp.o"
+"simple_can\stm32f4xx_hal_gpio.o"
+"simple_can\stm32f4xx_hal.o"
+"simple_can\stm32f4xx_hal_pwr_ex.o"
+"simple_can\stm32f4xx_hal_flash_ex.o"
+"simple_can\stm32f4xx_hal_tim.o"
+"simple_can\stm32f4xx_hal_can.o"
+"simple_can\stm32f4xx_hal_tim_ex.o"
+"simple_can\stm32f4xx_hal_cortex.o"
+"simple_can\stm32f4xx_hal_pwr.o"
+"simple_can\stm32f4xx_hal_rcc_ex.o"
+"simple_can\stm32f4xx_hal_rcc.o"
+"simple_can\stm32f4xx_hal_dma_ex.o"
+"simple_can\stm32f4xx_hal_flash_ramfunc.o"
+"simple_can\stm32f4xx_hal_flash.o"
+"simple_can\stm32f4xx_hal_dma.o"
+--library_type=microlib --strict --scatter "Simple_CAN\Simple_CAN.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Simple_CAN.map" -o Simple_CAN\Simple_CAN.axf
